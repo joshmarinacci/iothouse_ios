@@ -12,6 +12,14 @@
 		0340DD2C1C309D86000C1C10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD2A1C309D86000C1C10 /* Main.storyboard */; };
 		0340DD2E1C309D86000C1C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD2D1C309D86000C1C10 /* Assets.xcassets */; };
 		0340DD311C309D86000C1C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD2F1C309D86000C1C10 /* LaunchScreen.storyboard */; };
+		0340DD3F1C30A068000C1C10 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0340DD3E1C30A068000C1C10 /* ExternalAccessory.framework */; };
+		0340DD5B1C30AAFA000C1C10 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD5A1C30AAFA000C1C10 /* include */; };
+		0340DD5E1C30ABAF000C1C10 /* libPulse2SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0340DD5C1C30AB04000C1C10 /* libPulse2SDK.a */; };
+		03B8FBFC1C31EA0C00E72AEF /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B8FBFB1C31EA0C00E72AEF /* PubNub.framework */; };
+		03CE92B71C3202C9000928D5 /* party.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03CE92B61C3202C9000928D5 /* party.m4a */; };
+		03CE92BA1C32084F000928D5 /* fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03CE92B81C32084F000928D5 /* fire.wav */; };
+		03CE92BB1C32084F000928D5 /* rain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03CE92B91C32084F000928D5 /* rain.m4a */; };
+		9B2190F6B2B70AE4FE4ACA41 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67FCA63A069BF7D20B190D4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,17 @@
 		0340DD2D1C309D86000C1C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0340DD301C309D86000C1C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0340DD321C309D86000C1C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0340DD3E1C30A068000C1C10 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		0340DD501C30A9ED000C1C10 /* SimpsonsHousePulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpsonsHousePulse-Bridging-Header.h"; sourceTree = "<group>"; };
+		0340DD5A1C30AAFA000C1C10 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = Pulse2SDK/include; sourceTree = "<group>"; };
+		0340DD5C1C30AB04000C1C10 /* libPulse2SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPulse2SDK.a; path = Pulse2SDK/libPulse2SDK.a; sourceTree = "<group>"; };
+		03B8FBFB1C31EA0C00E72AEF /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PubNub.framework; path = "Pods/../build/Debug-iphoneos/PubNub.framework"; sourceTree = "<group>"; };
+		03CE92B61C3202C9000928D5 /* party.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = party.m4a; sourceTree = "<group>"; };
+		03CE92B81C32084F000928D5 /* fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire.wav; sourceTree = "<group>"; };
+		03CE92B91C32084F000928D5 /* rain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.m4a; sourceTree = "<group>"; };
+		B972E18C08E8F7AB0EE2EDA2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF3D885E4E56BE74A513E341 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F67FCA63A069BF7D20B190D4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B8FBFC1C31EA0C00E72AEF /* PubNub.framework in Frameworks */,
+				0340DD5E1C30ABAF000C1C10 /* libPulse2SDK.a in Frameworks */,
+				0340DD3F1C30A068000C1C10 /* ExternalAccessory.framework in Frameworks */,
+				9B2190F6B2B70AE4FE4ACA41 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +61,12 @@
 		0340DD1A1C309D86000C1C10 = {
 			isa = PBXGroup;
 			children = (
+				0340DD591C30AAE4000C1C10 /* Pulse2SDK */,
+				0340DD3E1C30A068000C1C10 /* ExternalAccessory.framework */,
 				0340DD251C309D86000C1C10 /* SimpsonsHousePulse */,
 				0340DD241C309D86000C1C10 /* Products */,
+				125C28A16695C16733A8D9EE /* Pods */,
+				4F6565D30B978ACCC60B745A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,45 @@
 		0340DD251C309D86000C1C10 /* SimpsonsHousePulse */ = {
 			isa = PBXGroup;
 			children = (
+				03CE92B81C32084F000928D5 /* fire.wav */,
+				03CE92B91C32084F000928D5 /* rain.m4a */,
+				03CE92B61C3202C9000928D5 /* party.m4a */,
 				0340DD261C309D86000C1C10 /* AppDelegate.swift */,
 				0340DD281C309D86000C1C10 /* ViewController.swift */,
 				0340DD2A1C309D86000C1C10 /* Main.storyboard */,
 				0340DD2D1C309D86000C1C10 /* Assets.xcassets */,
 				0340DD2F1C309D86000C1C10 /* LaunchScreen.storyboard */,
 				0340DD321C309D86000C1C10 /* Info.plist */,
+				0340DD501C30A9ED000C1C10 /* SimpsonsHousePulse-Bridging-Header.h */,
 			);
 			path = SimpsonsHousePulse;
+			sourceTree = "<group>";
+		};
+		0340DD591C30AAE4000C1C10 /* Pulse2SDK */ = {
+			isa = PBXGroup;
+			children = (
+				0340DD5A1C30AAFA000C1C10 /* include */,
+				0340DD5C1C30AB04000C1C10 /* libPulse2SDK.a */,
+			);
+			name = Pulse2SDK;
+			sourceTree = "<group>";
+		};
+		125C28A16695C16733A8D9EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF3D885E4E56BE74A513E341 /* Pods.debug.xcconfig */,
+				B972E18C08E8F7AB0EE2EDA2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F6565D30B978ACCC60B745A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B8FBFB1C31EA0C00E72AEF /* PubNub.framework */,
+				F67FCA63A069BF7D20B190D4 /* Pods.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0340DD351C309D86000C1C10 /* Build configuration list for PBXNativeTarget "SimpsonsHousePulse" */;
 			buildPhases = (
+				3AD2407328B31C95D42226EB /* Check Pods Manifest.lock */,
 				0340DD1F1C309D86000C1C10 /* Sources */,
 				0340DD201C309D86000C1C10 /* Frameworks */,
 				0340DD211C309D86000C1C10 /* Resources */,
+				86C5A8766062E65778691AD8 /* Embed Pods Frameworks */,
+				A43CAB46A039DEC740F1329E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -90,11 +151,13 @@
 		0340DD1B1C309D86000C1C10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = PubNub;
 				TargetAttributes = {
 					0340DD221C309D86000C1C10 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = EYDSR3DT3F;
 					};
 				};
 			};
@@ -121,13 +184,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CE92BA1C32084F000928D5 /* fire.wav in Resources */,
+				03CE92B71C3202C9000928D5 /* party.m4a in Resources */,
+				03CE92BB1C32084F000928D5 /* rain.m4a in Resources */,
 				0340DD311C309D86000C1C10 /* LaunchScreen.storyboard in Resources */,
 				0340DD2E1C309D86000C1C10 /* Assets.xcassets in Resources */,
 				0340DD2C1C309D86000C1C10 /* Main.storyboard in Resources */,
+				0340DD5B1C30AAFA000C1C10 /* include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AD2407328B31C95D42226EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86C5A8766062E65778691AD8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43CAB46A039DEC740F1329E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0340DD1F1C309D86000C1C10 /* Sources */ = {
@@ -246,23 +361,66 @@
 		};
 		0340DD361C309D86000C1C10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3D885E4E56BE74A513E341 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include/**";
 				INFOPLIST_FILE = SimpsonsHousePulse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pulse2SDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.SimpsonsHousePulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpsonsHousePulse/SimpsonsHousePulse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include $(PROJECT_DIR)/Pulse2SDK/**";
 			};
 			name = Debug;
 		};
 		0340DD371C309D86000C1C10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B972E18C08E8F7AB0EE2EDA2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_ONLY_ACTIVE_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include/**";
 				INFOPLIST_FILE = SimpsonsHousePulse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pulse2SDK",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.SimpsonsHousePulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpsonsHousePulse/SimpsonsHousePulse-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include $(PROJECT_DIR)/Pulse2SDK/**";
 			};
 			name = Release;
 		};
@@ -285,6 +443,7 @@
 				0340DD371C309D86000C1C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
