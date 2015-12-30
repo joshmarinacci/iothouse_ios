@@ -13,8 +13,7 @@
 		0340DD2E1C309D86000C1C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD2D1C309D86000C1C10 /* Assets.xcassets */; };
 		0340DD311C309D86000C1C10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD2F1C309D86000C1C10 /* LaunchScreen.storyboard */; };
 		0340DD3F1C30A068000C1C10 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0340DD3E1C30A068000C1C10 /* ExternalAccessory.framework */; };
-		0340DD5B1C30AAFA000C1C10 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 0340DD5A1C30AAFA000C1C10 /* include */; };
-		0340DD5E1C30ABAF000C1C10 /* libPulse2SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0340DD5C1C30AB04000C1C10 /* libPulse2SDK.a */; };
+		0378221C1C34539200FD9E2C /* Pulse2SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0378221B1C34539200FD9E2C /* Pulse2SDK.framework */; };
 		03B8FBFC1C31EA0C00E72AEF /* PubNub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B8FBFB1C31EA0C00E72AEF /* PubNub.framework */; };
 		03CE92B71C3202C9000928D5 /* party.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03CE92B61C3202C9000928D5 /* party.m4a */; };
 		03CE92BA1C32084F000928D5 /* fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03CE92B81C32084F000928D5 /* fire.wav */; };
@@ -32,8 +31,7 @@
 		0340DD321C309D86000C1C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0340DD3E1C30A068000C1C10 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		0340DD501C30A9ED000C1C10 /* SimpsonsHousePulse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpsonsHousePulse-Bridging-Header.h"; sourceTree = "<group>"; };
-		0340DD5A1C30AAFA000C1C10 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = Pulse2SDK/include; sourceTree = "<group>"; };
-		0340DD5C1C30AB04000C1C10 /* libPulse2SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPulse2SDK.a; path = Pulse2SDK/libPulse2SDK.a; sourceTree = "<group>"; };
+		0378221B1C34539200FD9E2C /* Pulse2SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pulse2SDK.framework; sourceTree = "<group>"; };
 		03B8FBFB1C31EA0C00E72AEF /* PubNub.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PubNub.framework; path = "Pods/../build/Debug-iphoneos/PubNub.framework"; sourceTree = "<group>"; };
 		03CE92B61C3202C9000928D5 /* party.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = party.m4a; sourceTree = "<group>"; };
 		03CE92B81C32084F000928D5 /* fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire.wav; sourceTree = "<group>"; };
@@ -49,9 +47,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B8FBFC1C31EA0C00E72AEF /* PubNub.framework in Frameworks */,
-				0340DD5E1C30ABAF000C1C10 /* libPulse2SDK.a in Frameworks */,
 				0340DD3F1C30A068000C1C10 /* ExternalAccessory.framework in Frameworks */,
 				9B2190F6B2B70AE4FE4ACA41 /* Pods.framework in Frameworks */,
+				0378221C1C34539200FD9E2C /* Pulse2SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +59,7 @@
 		0340DD1A1C309D86000C1C10 = {
 			isa = PBXGroup;
 			children = (
-				0340DD591C30AAE4000C1C10 /* Pulse2SDK */,
+				0378221B1C34539200FD9E2C /* Pulse2SDK.framework */,
 				0340DD3E1C30A068000C1C10 /* ExternalAccessory.framework */,
 				0340DD251C309D86000C1C10 /* SimpsonsHousePulse */,
 				0340DD241C309D86000C1C10 /* Products */,
@@ -93,15 +91,6 @@
 				0340DD501C30A9ED000C1C10 /* SimpsonsHousePulse-Bridging-Header.h */,
 			);
 			path = SimpsonsHousePulse;
-			sourceTree = "<group>";
-		};
-		0340DD591C30AAE4000C1C10 /* Pulse2SDK */ = {
-			isa = PBXGroup;
-			children = (
-				0340DD5A1C30AAFA000C1C10 /* include */,
-				0340DD5C1C30AB04000C1C10 /* libPulse2SDK.a */,
-			);
-			name = Pulse2SDK;
 			sourceTree = "<group>";
 		};
 		125C28A16695C16733A8D9EE /* Pods */ = {
@@ -190,7 +179,6 @@
 				0340DD311C309D86000C1C10 /* LaunchScreen.storyboard in Resources */,
 				0340DD2E1C309D86000C1C10 /* Assets.xcassets in Resources */,
 				0340DD2C1C309D86000C1C10 /* Main.storyboard in Resources */,
-				0340DD5B1C30AAFA000C1C10 /* include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +361,13 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SimpsonsHousePulse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Pulse2SDK",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.SimpsonsHousePulse;
@@ -388,7 +375,7 @@
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpsonsHousePulse/SimpsonsHousePulse-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include $(PROJECT_DIR)/Pulse2SDK/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -406,21 +393,20 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SimpsonsHousePulse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Pulse2SDK",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pubnub.SimpsonsHousePulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpsonsHousePulse/SimpsonsHousePulse-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Pulse2SDK/include $(PROJECT_DIR)/Pulse2SDK/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
