@@ -24,35 +24,23 @@
                                     <action selector="triggerEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TaX-xm-JQW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWr-VC-jS8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWr-VC-jS8">
                                 <rect key="frame" x="251" y="90" width="98" height="30"/>
                                 <state key="normal" title="Homer Parties"/>
                                 <connections>
                                     <action selector="triggerPartyEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdn-T5-6lc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-dG-zP8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgS-dG-zP8">
                                 <rect key="frame" x="250" y="128" width="101" height="30"/>
                                 <state key="normal" title="Maggie Sleeps"/>
                                 <connections>
                                     <action selector="triggerSleepEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hVf-EA-obD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LaO-fK-KTo">
-                                <rect key="frame" x="235" y="166" width="130" height="30"/>
-                                <state key="normal" title="Close Garage Door"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8c-bz-FIU">
-                                <rect key="frame" x="272" y="204" width="57" height="30"/>
-                                <state key="normal" title="Turn Off"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dha-GG-qNO">
-                                <rect key="frame" x="273" y="242" width="55" height="30"/>
-                                <state key="normal" title="Turn On"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOQ-38-zcc">
-                                <rect key="frame" x="231" y="52" width="138" height="30"/>
-                                <state key="normal" title="Home Comes Home"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOQ-38-zcc">
+                                <rect key="frame" x="229" y="52" width="143" height="30"/>
+                                <state key="normal" title="Homer Comes Home"/>
                                 <connections>
                                     <action selector="triggerArriveEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Emo-1b-DRH"/>
                                 </connections>
@@ -60,34 +48,68 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker ConnectionStatus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1e-74-v7l">
                                 <rect key="frame" x="20" y="571" width="204" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVh-yb-rza">
-                                <rect key="frame" x="27" y="533" width="33" height="30"/>
-                                <state key="normal" title="sp hi"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD4-eS-pbD">
+                                <rect key="frame" x="139" y="533" width="77" height="30"/>
+                                <state key="normal" title="step door -"/>
                                 <connections>
-                                    <action selector="setSpeakerLEDHigh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHW-cc-EuB"/>
+                                    <action selector="stepDoorClose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GDU-MK-bYG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOk-RP-t3K">
-                                <rect key="frame" x="88" y="533" width="33" height="30"/>
-                                <state key="normal" title="sp lo"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXt-dR-dHG">
+                                <rect key="frame" x="20" y="533" width="80" height="30"/>
+                                <state key="normal" title="step door +"/>
                                 <connections>
-                                    <action selector="setSpeakerLEDLow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wIJ-7h-JCT"/>
+                                    <action selector="stepDoorOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v3l-yx-eb2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8c-bz-FIU">
+                                <rect key="frame" x="272" y="204" width="57" height="30"/>
+                                <state key="normal" title="Turn Off"/>
+                                <connections>
+                                    <action selector="turnOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sy-II-csu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FT8-fc-d5u">
+                                <rect key="frame" x="20" y="495" width="51" height="30"/>
+                                <state key="normal" title="light on"/>
+                                <connections>
+                                    <action selector="turnOnLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TGD-5k-WhS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phE-Th-irX">
+                                <rect key="frame" x="139" y="495" width="53" height="30"/>
+                                <state key="normal" title="light off"/>
+                                <connections>
+                                    <action selector="turnOffLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXO-Cb-M2o"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xOk-RP-t3K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="5YG-nd-0qM"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="H1e-74-v7l" secondAttribute="leading" id="Cd9-wn-UNT"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MVh-yb-rza" secondAttribute="bottom" constant="37" id="DhE-Xc-bqa"/>
+                            <constraint firstItem="BD4-eS-pbD" firstAttribute="top" secondItem="phE-Th-irX" secondAttribute="bottom" constant="8" id="0El-h6-Cph"/>
+                            <constraint firstItem="tOQ-38-zcc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Jd-5t-biE"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="FT8-fc-d5u" secondAttribute="leading" id="8y8-ZF-92P"/>
+                            <constraint firstItem="NgS-dG-zP8" firstAttribute="top" secondItem="lWr-VC-jS8" secondAttribute="bottom" constant="8" id="Amc-Hp-wYC"/>
+                            <constraint firstItem="H1e-74-v7l" firstAttribute="top" secondItem="BD4-eS-pbD" secondAttribute="bottom" constant="8" id="I0h-pr-piJ"/>
+                            <constraint firstItem="BD4-eS-pbD" firstAttribute="leading" secondItem="MXt-dR-dHG" secondAttribute="trailing" constant="39" id="Kkg-RM-C0D"/>
                             <constraint firstItem="O8p-z0-nMT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LEN-ZT-lyg"/>
+                            <constraint firstItem="MXt-dR-dHG" firstAttribute="top" secondItem="FT8-fc-d5u" secondAttribute="bottom" constant="8" id="NpT-lV-frK"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="H1e-74-v7l" secondAttribute="leading" id="SkQ-jC-jvL"/>
                             <constraint firstItem="O8p-z0-nMT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TWt-nD-oNh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xOk-RP-t3K" secondAttribute="bottom" constant="37" id="jFo-Ia-dy1"/>
-                            <constraint firstItem="MVh-yb-rza" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="vSf-2k-zLX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H1e-74-v7l" secondAttribute="bottom" constant="8" id="zy4-c0-rCc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MXt-dR-dHG" secondAttribute="leading" id="XNF-sr-176"/>
+                            <constraint firstItem="NgS-dG-zP8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bEj-H6-8KP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BD4-eS-pbD" secondAttribute="bottom" constant="37" id="hQb-gi-3i0"/>
+                            <constraint firstItem="lWr-VC-jS8" firstAttribute="top" secondItem="tOQ-38-zcc" secondAttribute="bottom" constant="8" id="kBP-Kb-fDj"/>
+                            <constraint firstItem="phE-Th-irX" firstAttribute="leading" secondItem="FT8-fc-d5u" secondAttribute="trailing" constant="68" id="lSf-Kq-L9U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H1e-74-v7l" secondAttribute="bottom" constant="8" id="nez-M2-feX"/>
+                            <constraint firstItem="tOQ-38-zcc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="nsp-yt-Gc4"/>
+                            <constraint firstItem="v8c-bz-FIU" firstAttribute="top" secondItem="NgS-dG-zP8" secondAttribute="bottom" constant="46" id="q0M-I1-ufj"/>
+                            <constraint firstItem="H1e-74-v7l" firstAttribute="top" secondItem="MXt-dR-dHG" secondAttribute="bottom" constant="8" id="rYm-Cg-Uz4"/>
+                            <constraint firstItem="lWr-VC-jS8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wne-zv-I6H"/>
+                            <constraint firstItem="v8c-bz-FIU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yUf-hD-ZWp"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">

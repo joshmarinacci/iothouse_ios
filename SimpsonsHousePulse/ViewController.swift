@@ -48,13 +48,14 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func setSpeakerLEDHigh(sender: AnyObject) {
+    @IBAction func turnOnLight(sender: AnyObject) {
         HMNLedPattern.setLedBrightness(255)
     }
     
-    @IBAction func setSpeakerLEDLow(sender: AnyObject) {
+    @IBAction func turnOffLight(sender: AnyObject) {
         HMNLedPattern.setLedBrightness(0)
     }
+    
     func deviceConnected() {
         Swift.print("deviceConnected")
         speakerConnectionLabel.text = "Speaker connected";
@@ -98,6 +99,7 @@ class ViewController: UIViewController {
                 print("yes error sending")
             }
         })
+        HMNLedPattern.setLedBrightness(255)
         setLEDPattern(FIRE)
         playClip("fire",ext:"wav")
     }
@@ -117,7 +119,29 @@ class ViewController: UIViewController {
     
     
     @IBAction func triggerSleepEvent(sender: AnyObject) {
-        let obj = [ "type":"action", "action":"sleep"]
+        sendAction("sleep")
+        setLEDPattern(RAIN)
+        playClip("rain",ext:"m4a")
+    }
+    
+    
+    @IBAction func stepDoorClose(sender: AnyObject) {
+        sendAction("stepDoorClose")
+    }
+    
+    @IBAction func stepDoorOpen(sender: AnyObject) {
+        sendAction("stepDoorOpen")
+    }
+    
+    @IBAction func turnOff(sender: AnyObject) {
+        HMNLedPattern.setLedBrightness(0)
+        sendAction("shutdown")
+    }
+
+    @IBAction func turnOn(sender: AnyObject) {
+    }
+    func sendAction(action:String) {
+        let obj = [ "type":"action", "action":action]
         self.client?.publish(obj, toChannel:"ch1", withCompletion: { (status) -> Void in
             if !status.error {
                 print("no error sending")
@@ -125,10 +149,7 @@ class ViewController: UIViewController {
                 print("yes error sending")
             }
         })
-        setLEDPattern(RAIN)
-        playClip("rain",ext:"m4a")
     }
-    
     var backgroundMusicPlayer:AVAudioPlayer = AVAudioPlayer()
     
     func setLEDPattern(val:Int) {
